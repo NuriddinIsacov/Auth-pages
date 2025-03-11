@@ -191,7 +191,7 @@
           <div class="flex flex-col gap-1">
             <button
               id="btn"
-              class="p-4 rounded-full bg-gray-300 text-white font-medium"
+              class="p-4 rounded-full bg-gray-300 text-white font-medium transition duration-300 ease"
             >
               Create an account
             </button>
@@ -216,16 +216,16 @@
                   "cursor-not-allowed"
                 );
                 button.classList.add(
-                  "bg-blue-600",
-                  "hover:bg-blue-700",
+                  "bg-black",
+                  "hover:opacity-80",
                   "opacity-100",
                   "cursor-pointer"
                 );
               } else {
                 button.disabled = true;
                 button.classList.remove(
-                  "bg-blue-600",
-                  "hover:bg-blue-700",
+                  "bg-black",
+                  "hover:bg-black",
                   "opacity-100",
                   "cursor-pointer"
                 );

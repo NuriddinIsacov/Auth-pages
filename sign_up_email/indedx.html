@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Email</title>
+
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="h-screen flex flex-col">
+    <header
+      class="flex items-center justify-between px-7 w-full h-20 border-b border-gray-500"
+    >
+      <span class="w-11 h-11 bg-gray-500 rounded-full"></span>
+      <div class="flex gap-2">
+        <input
+          type="text"
+          name=""
+          id=""
+          placeholder="Search"
+          class="px-4 bg-gray-200 w-40 rounded-full border border-gray-300 focus:outline-none"
+        />
+        <select
+          name="languages"
+          class="block py-2 px-3 rounded-2xl appearance-none focus:outline-none transition duration-200 ease"
+        >
+          <option value="en-US">English (United States)</option>
+          <option value="en-GB">English (United Kingdom)</option>
+          <option value="es-ES">Español (España)</option>
+          <option value="fr-FR">Français (France)</option>
+          <option value="de-DE">Deutsch (Deutschland)</option>
+          <option value="zh-CN">中文 (中国)</option>
+          <option value="ja-JP">日本語 (日本)</option>
+          <option value="ru-RU">Русский (Россия)</option>
+          <option value="ar-SA">العربية (السعودية)</option>
+          <option value="uz-UZ">Oʻzbekcha (Oʻzbekiston)</option>
+        </select>
+        <button class="px-8 rounded-[8px] border border-black font-medium">
+          Log in
+        </button>
+        <button class="text-white text-xl bg-black px-8 rounded-[8px]">
+          Sign up
+        </button>
+      </div>
+    </header>
+    <main
+      class="flex flex-col items-start justify-center h-full w-full flex-1 bg-[url(bg.png)] bg-no-repeat bg-cover relative px-20"
+    >
+      <div class="flex flex-col gap-20 w-1/2 p-14 bg-white/30 rounded-2xl">
+        <div class="flex flex-col gap-3">
+          <h1 class="text-5xl font-medium">Design with us</h1>
+          <h1 class="text-5xl font-medium">Explore with us</h1>
+          <p class="text-2xl">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+            lobortis maximus nunc, ac rhoncus odio congue quis. Sed ac semper
+            orci, eu porttitor lacus.
+          </p>
+        </div>
+        <div class="w-full flex flex-col gap-2 xl:flex-row">
+          <input type="text" class="border border-gray-400 py-2 px-4 rounded-2xl w-full focus:outline-none xl:w-[80%]" placeholder="Enter your email address"/>
+          <button class="border bg-black text-white font-medium px-10 rounded-2xl py-3 hover:shadow-lg xl:py-0">Sign up</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

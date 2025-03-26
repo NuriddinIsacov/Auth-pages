@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aut Illustration</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auth Illustration</title>
 
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 
@@ -11,32 +11,132 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-</head>
-<body>
-    <header class="fixed flex items-center justify-between px-7 top-0 w-full h-20 border-b border-gray-500">
-        <span class="w-11 h-11 bg-gray-500 rounded-full"></span>
-        <div class="flex gap-2">
-            <input type="text" name="" id="" placeholder="Search" class=" px-4 bg-gray-200 w-40 rounded-full border border-gray-500 focus:outline-none">
-            <select name="languages" class="block py-2 px-3 rounded-2xl appearance-none focus:outline-none">
-                <option value="en-US">English (United States)</option>
-                <option value="en-GB">English (United Kingdom)</option>
-                <option value="es-ES">Español (España)</option>
-                <option value="fr-FR">Français (France)</option>
-                <option value="de-DE">Deutsch (Deutschland)</option>
-                <option value="zh-CN">中文 (中国)</option>
-                <option value="ja-JP">日本語 (日本)</option>
-                <option value="ru-RU">Русский (Россия)</option>
-                <option value="ar-SA">العربية (السعودية)</option>
-                <option value="uz-UZ">Oʻzbekcha (Oʻzbekiston)</option>
-
-
-              </select>
-              <button class="text-white text-xl bg-black px-8 rounded-[8px]">Log in</button>
-              
-        </div>
+  </head>
+  <body class="h-screen flex flex-col">
+    <header
+      class="flex items-center justify-between px-7 w-full h-20 border-b border-gray-500"
+    >
+      <span class="w-11 h-11 bg-gray-500 rounded-full"></span>
+      <div class="flex gap-2">
+        <input
+          type="text"
+          name=""
+          id=""
+          placeholder="Search"
+          class="px-4 bg-gray-200 w-40 rounded-full border border-gray-500 focus:outline-none"
+        />
+        <select
+          name="languages"
+          class="block py-2 px-3 rounded-2xl appearance-none focus:outline-none transition duration-200 ease"
+        >
+          <option value="en-US">English (United States)</option>
+          <option value="en-GB">English (United Kingdom)</option>
+          <option value="es-ES">Español (España)</option>
+          <option value="fr-FR">Français (France)</option>
+          <option value="de-DE">Deutsch (Deutschland)</option>
+          <option value="zh-CN">中文 (中国)</option>
+          <option value="ja-JP">日本語 (日本)</option>
+          <option value="ru-RU">Русский (Россия)</option>
+          <option value="ar-SA">العربية (السعودية)</option>
+          <option value="uz-UZ">Oʻzbekcha (Oʻzbekiston)</option>
+        </select>
+        <button class="text-white text-xl bg-black px-8 rounded-[8px]">
+          Log in
+        </button>
+      </div>
     </header>
-    <main>
-        <div></div>
+    <main class="h-full w-full flex-1 bg-black relative px-20">
+      <div
+        class="flex flex-col w-[500px] gap-6 items-start justify-center h-full ml-20"
+      >
+        <h1 class="text-white text-5xl">Design with us</h1>
+        <p class="text-white text-4xl">
+          Access to thousands of design resources and templates
+        </p>
+        <img src="Illustration.png" alt="none" />
+      </div>
+      <div
+        class="absolute right-32 top-1/2 transform -translate-y-1/2 w-[600px] bg-white rounded-3xl py-12 px-20"
+      >
+        <div class="grid grid-cols-2 gap-2">
+          <div class="flex flex-col col-span-1">
+            <label for="" class="text-gray-500 text-[16pxs]">First name</label>
+            <input
+              type="text"
+              name=""
+              id=""
+              class="rounded-xl p-2 border border-gray-400 focus:outline-none"
+            />
+          </div>
+          <div class="flex flex-col col-span-1">
+            <label for="" class="text-gray-500 text-[16pxs]">Last name</label>
+            <input
+              type="text"
+              name=""
+              id=""
+              class="rounded-xl p-2 border border-gray-400 focus:outline-none"
+            />
+          </div>
+          <div class="flex flex-col col-span-2">
+            <label for="" class="text-gray-500 text-[16pxs]"
+              >Email address</label
+            >
+            <input
+              type="text"
+              name=""
+              id=""
+              class="rounded-xl p-2 border border-gray-400 focus:outline-none"
+            />
+          </div>
+          <div class="flex flex-col col-span-2">
+            <label for="" class="text-gray-500 text-[16pxs]"
+              >Phone number</label
+            >
+            <input
+              type="tel"
+              name=""
+              id=""
+              class="rounded-xl p-2 border border-gray-400 focus:outline-none"
+            />
+          </div>
+          <div class="flex flex-col col-span-2">
+            <label for="" class="text-gray-500 text-[16pxs]">Password</label>
+            <input
+              type="password"
+              name=""
+              id=""
+              class="rounded-xl p-2 border border-gray-400 focus:outline-none"
+            />
+          </div>
+        </div>
+
+        <div class="mt-10 flex flex-col gap-4">
+            <div class="flex gap-1 items-start">
+              <input type="checkbox" name="" id="terms" class="mt-2" />
+              <p class="text-base">
+                By creating an account, I agree to our
+                <a class="underline hover:text-blue-600" href="">Terms of use</a> and <a class="underline hover:text-blue-600" href="">Privacy Policy</a>
+              </p>
+            </div class="mt-10">
+            <div class="flex gap-1 items-start">
+              <input type="checkbox" name="" id="terms" class="mt-2" />
+              <p class="text-base">
+                By creating an account, I am also consenting to receive SMS messages
+                and emails, including product new feature updates, events, and
+                marketing promotions.
+              </p>
+            </div>
+          </div>
+          <div class="flex items-center gap-3 mt-4">
+              <button class="py-2 px-8  rounded-full bg-gray-200 hover:shadow-lg">Sign up</button>
+              <p>Already have an ccount? <a class="underline hover:text-blue-600" href="">Log in</a></p>
+          </div>
+        </div>
+
+    </div>
+
+
+      
     </main>
-</body>
+  </body>
 </html>
